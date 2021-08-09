@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+    
+    <!-- OUR CSS -->
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Bootstrap</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">TaskLog</a>
+          <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- HOME -->
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- OPTIONS -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" 
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+                aria-expanded="false"> Options </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Create New</a></li>
+                  <li><a class="dropdown-item" href="#">Search cards</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Back to Home</a></li>
+                </ul>
+              </li>
+              
+              
+            </ul>
+            <button type="button" class="btn btn-light"><i class="fas fa-plus"></i> Add New </button>
+            
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container">
+          
+          <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+        <div class="input-group mb-3 shadow">
+            <input type="text" class="form-control" 
+            placeholder="Search Task" 
+            aria-label="Search Task" 
+            aria-describedby="basic-addon2">
+            <span class="input-group-text" 
+            id="basic-addon2"> <i class="fas fa-search"></i> </span>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- CARDS -->
+      
+      <div class="row">
+      <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
+            <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+        </div>
+        <img src="https://www.orissapost.com/wp-content/uploads/2020/07/stressed_student.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">STUDY FOR TEST</h5>
+          <p class="card-text">You have to complete the Physics Assignment and study unit 1</p>
+          <a href="#" class="btn btn-primary float-start">Test on Saturday</a>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-outline-primary float-end"> Open Task </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header d-flex justify-content-end gap-2">
+              <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
+              <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8mkE-YmWUnSmgr5-VqB7-ExygWr9L_Ya4pGjLl2QW5cZ2atVlv1DsOtRwNEUxw3yhHQ&usqp=CAU">
+          <div class="card-body">
+            <h5 class="card-title">FRIEND'S B-DAY</h5>
+            <p class="card-text">You have to complete the Physics Assignment and study unit 1</p>
+            <a href="#" class="btn btn-primary float-start">Test on Saturday</a>
+          </div>
+          <div class="card-footer">
+              <button type="button" class="btn btn-outline-primary float-end"> Open Task </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header d-flex justify-content-end gap-2">
+              <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
+              <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+          </div>
+          <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/04/online-1617947180.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BUY ESSENTIALS</h5>
+            <p class="card-text">You have to complete the Physics Assignment and study unit 1</p>
+            <a href="#" class="btn btn-primary float-start">Test on Saturday</a>
+          </div>
+          <div class="card-footer">
+              <button type="button" class="btn btn-outline-primary float-end"> Open Task </button>
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
+</div>
+
+      
+
+
+
+
+
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+</body>
+</html>
