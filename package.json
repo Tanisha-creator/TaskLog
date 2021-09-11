@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanisha-creator/TaskLog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanisha-creator/TaskLog/issues"
+  },
+  "homepage": "https://github.com/Tanisha-creator/TaskLog#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
